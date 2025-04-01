@@ -36,4 +36,4 @@ jobs:
           platforms: |
             linux/amd64
             linux/arm64
-          tags: ghcr.io/skyra-project/haste-server:latest
+          tags: ghcr.io/stegripe/haste-server:latest
