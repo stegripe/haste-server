@@ -9,7 +9,7 @@ on:
 jobs:
   Linting:
     name: Linting NodeJS
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
 
   Building:
     name: Building NodeJS
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
