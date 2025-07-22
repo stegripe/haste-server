@@ -14,7 +14,7 @@ on:
 jobs:
   PublishHasteServer:
     name: Publish HasteServer image to container registries
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
