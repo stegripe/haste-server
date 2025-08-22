@@ -12,13 +12,13 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Use Node.js v20
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: yarn
       - name: Install Dependencies
         run: yarn --immutable
@@ -30,11 +30,11 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Use Node.js v20
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: yarn
       - name: Install Dependencies
         run: yarn --immutable
